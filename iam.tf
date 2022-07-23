@@ -1,8 +1,3 @@
-provider "aws" {
-  region = "us-east-1"
-  profile = "default"
-}
-
 resource "aws_iam_role" "ec2_kubernetes_ebs_role" {
   name = "ec2_kubernetes_ebs_role"
 
