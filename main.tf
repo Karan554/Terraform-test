@@ -7,6 +7,12 @@ terraform {
   }
 }
 
+provider "aws" {
+  region = var.aws_region
+ # access_key = ""
+  #secret_key = ""
+}
+
 resource "aws_security_group" "jenkins_sg" {
   name        = "jenkins_sg"
   description = "Allow Jenkins Traffic"
