@@ -7,10 +7,10 @@ terraform {
   }
 }
 
-#provider "aws" {
-#  region = var.aws_region
-#  profile = "default"
-#}
+provider "aws" {
+   region = "us-east-1"
+   profile = "default"
+}
 
 resource "aws_security_group" "jenkins_sg" {
   name        = "jenkins_sg"
