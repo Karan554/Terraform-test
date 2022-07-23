@@ -9,8 +9,7 @@ terraform {
 
 provider "aws" {
   region = var.aws_region
-  access_key = "$AWS_ACCESS_KEY_ID"
-  secret_key = "$AWS_SECRET_ACCESS_KEY"
+  profile = "default"
 }
 
 resource "aws_security_group" "jenkins_sg" {
