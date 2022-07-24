@@ -1,3 +1,7 @@
+variable "aws_region" {
+  description = "VPC for Jenkins"
+}
+
 variable "vpc_id" {
   description = "VPC for Jenkins"
 }
